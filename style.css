@@ -1,0 +1,17 @@
+tr:hover {
+    background-color: aqua;
+  }
+
+#form2{
+    display: none;
+}
+
+#ban{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#car{
+  height: 10%;
+  width: auto;
+}
