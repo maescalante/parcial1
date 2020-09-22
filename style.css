@@ -12,6 +12,7 @@ body{
 }
 
 #car{
+  margin-top: 10px;
   height: 40px;
   width: auto;
 
@@ -21,12 +22,13 @@ h2{
 }
 .card{
   
-  min-height: 400px;
 
 
+  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
+
 
 .card-img-top{
      width: 100%;
@@ -43,5 +45,15 @@ h2{
   margin-right: 20px;
 }
 h1{
+  margin-top: 20px;
   font-family: 'Satisfy';
+}
+h5{
+  margin-top: 20px;
+}
+
+.nav-link{ cursor: pointer; }
+
+footer{
+  text-align: center;
 }
