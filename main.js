@@ -93,6 +93,7 @@ function poner(name, lista) {
     let cardImage = document.createElement("img");
     cardImage.className = "card-img-top";
     cardImage.src = element.image;
+    cardImage.alt = "Foto producto";
     cardImage.alt = "product image";
 
     let cardBody = document.createElement("div");
