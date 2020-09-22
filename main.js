@@ -169,8 +169,39 @@ function pedido(){
 
   content.appendChild(tab)
 
+
+//depsues de la tabla
+  r=document.createElement("row")
+  totalFinal= document.createElement("b")
+  totalFinal.innerText="Total:$"+getTotal()
+  r.appendChild(totalFinal)
+  butt= document.createElement("button")
+  butt.className="btn btn-danger"
+  butt.innerText="Cancel"
+  butt.addEventListener('click',function(){
+    if (confirm("Are you sure about cancelling the order?")) {
+      productos=[]
+      pedido()
+    } 
+  })
+  r.appendChild(butt)
+  butt= document.createElement("button")
+  butt.className="btn btn-warning"
+  butt.innerText="Confirm order "
+  butt.addEventListener('click',function(){
+    console.log(toTable)
+  })
+
+  r.appendChild(butt)
+
+  content.appendChild(r)
 }
 
+function getTotal(){
+  tot=0
+  productos.forEach(prod=> tot+=prod.price)
+  return tot
+}
   
 function purchase(){
   lis=[]
@@ -199,6 +230,6 @@ function check(lis,name){
       ans= i
     }
   }
-  console.log(ans)
+
   return ans
 }
